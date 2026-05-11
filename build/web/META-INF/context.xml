@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/TlotlisangKhutlang2333874">
+    
+    <!-- Database DataSource -->
+    <Resource auth="Container" 
+              driverClassName="com.mysql.cj.jdbc.Driver" 
+              maxIdle="10" 
+              maxTotal="20" 
+              maxWaitMillis="10000" 
+              name="jdbc/ProcureGovDB" 
+              password="" 
+              testOnBorrow="true" 
+              type="javax.sql.DataSource" 
+              url="jdbc:mysql://localhost:3306/tlotlisangkhutlang2333874?useSSL=false&amp;serverTimezone=Africa/Johannesburg" 
+              username="root" 
+              validationQuery="SELECT 1"/>
+    
+    <!-- Mail Session for Email Notifications (Module 6) -->
+    <Resource name="mail/ProcureGovMail"
+              auth="Container"
+              type="javax.mail.Session"
+              mail.smtp.host="smtp.gmail.com"
+              mail.smtp.port="587"
+              mail.smtp.auth="true"
+              mail.smtp.starttls.enable="true"
+              mail.smtp.user="tlotlisang.khutlang@bothouniversity.com"
+              password="cfuonrgrwassorjn"
+              mail.debug="true"
+              mail.smtp.ssl.trust="smtp.gmail.com"/>
+              
+</Context>
